@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/1379210728.svg)](https://doi.org/10.5281/zenodo.22882628)
+
 # Principia Structurae Realitatis
 
 ## The Structural Principles of Reality
