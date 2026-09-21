@@ -9,6 +9,7 @@
   ],
   "version": "1.0.0",
   "access_right": "open",
+  "license": "cc-by-4.0",
   "keywords": [
     "large language models",
     "LLM reasoning",
