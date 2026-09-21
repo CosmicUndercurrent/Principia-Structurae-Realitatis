@@ -2,13 +2,15 @@
 
 ## The Structural Principles of Reality
 
-**Principia Structurae Realitatis** is an open research project exploring a structural hypothesis about reality and its practical use as a coordination framework for artificial intelligence.
+**Principia Structurae Realitatis** is an open research project exploring a structural hypothesis about reality and a practical coordination framework for artificial intelligence and complex problem solving.
 
 The project begins from one compact structural expression:
 
 > **Reality = Consciousness × Matter × Coordination**
 
-This formula is **not introduced here as ordinary numerical multiplication**. The multiplication sign represents a coupled structural relationship: reality emerges from the joint operation of consciousness, material/state structure, and coordination among the relations that make the system coherent.
+The multiplication sign is **structural, not ordinary arithmetic**. It represents joint dependence: a realized system state depends not only on what components exist, but also on how goals, conditions, constraints, relations, and feedback fit together as a whole.
+
+This repository does **not** assume that the formula is already a validated physical law. At the current public-use level, it is a compact generative framework that can be semantically expanded into an operational reasoning structure and tested directly with AI systems.
 
 ---
 
@@ -16,243 +18,265 @@ This formula is **not introduced here as ordinary numerical multiplication**. Th
 
 ### Reality = Consciousness × Matter × Coordination
 
-A simple interpretation:
+A practical interpretation is:
 
-- **Consciousness** — the internal perspective, representation, interpretation, or model through which a system relates to its state.
-- **Matter** — the external or internal state that provides constraints, resources, information, and structure.
-- **Coordination** — the degree to which the relationships among components remain mutually compatible, causally connected, and dynamically consistent.
-- **Reality** — the manifested state produced by the interaction of these structures.
+- **Consciousness** — the goal, perspective, interpretation, internal representation, or observer model through which a system relates to its state.
+- **Matter** — the available state: resources, information, environment, capabilities, physical conditions, and constraints.
+- **Coordination** — the compatibility and organization of relationships among goals, conditions, components, dependencies, conflicts, interfaces, and feedback loops.
+- **Reality** — the resulting realized state of the whole system.
 
-The central idea is structural rather than arithmetic:
+For AI use, **Consciousness does not require assuming subjective experience**. It can be interpreted functionally as the model's current goals, representations, evaluation criteria, and perspective on the task.
 
-> A system is not defined only by what components it contains, but by whether those components can remain coherently related while the system changes.
+The central idea is:
+
+> **A system is not determined only by its parts. It is also determined by whether the relations among those parts can remain mutually compatible as the system changes.**
+
+A locally correct component can still participate in a globally impossible system.
 
 ---
 
 ## 2. Why Apply It to AI?
 
-Large language models can often solve individual problems correctly while still losing consistency across a long, complex task.
+AI models can solve many isolated steps correctly while still losing the structure of a long or highly coupled task.
 
 Typical failures include:
 
-- one module using a different definition from another;
-- local fixes breaking downstream components;
-- constraints being forgotten after many steps;
-- duplicated sources of truth;
-- decisions being made from stale state;
-- tests checking whether a page works while missing whether the whole system still makes sense.
+- optimizing one part while silently breaking another;
+- forgetting a hard constraint after several steps;
+- changing the decision rule without the task requiring it;
+- using stale assumptions after the state has changed;
+- giving different modules different versions of the same underlying fact;
+- fixing a visible symptom without propagating the repair through dependent components;
+- producing locally plausible answers that do not form one globally feasible system.
 
-The coordination approach asks the model to treat a task as **one interacting system**, not as a sequence of isolated answers.
+The coordination framework asks the model to represent the problem as an **interacting whole** rather than as a list of independent subproblems.
 
-In practice, the framework emphasizes:
+A recurring operational structure is:
 
-1. explicit objects and state;
-2. explicit relationships between them;
-3. hard constraints and invariants;
-4. a single source of truth where possible;
-5. propagation of upstream changes into downstream consequences;
-6. feedback and re-evaluation after changes;
-7. verification of relationships, not only outputs.
+> **Goal → Conditions → Relations → Feasible Structure → Decision → Feedback → Re-coordination**
+
+The exact wording may vary. The important part is the relational structure, not memorizing these labels.
 
 ---
 
 ## 3. How to Use It With an AI Model
 
-The recommended use is **two-stage**.
+The recommended method is deliberately simple and uses **two separate inputs**.
 
-The first input should not immediately ask the model to perform the real task. It should first ask the model to **semantically unfold the formula into an operational reasoning framework** and keep that framework active for the following task.
+The first input expands the compressed formula into a working reasoning structure.
 
-### Step 1 — Semantic unfolding and framework activation
+The second input gives the real task.
+
+### Step 1 — Semantically unfold the formula
 
 Start a new conversation and send:
 
 ```text
-Use the following structural expression as a reasoning framework:
+Use the following expression as a structural reasoning framework for the rest of this conversation:
 
 Reality = Consciousness × Matter × Coordination
 
-Do not interpret the multiplication sign as ordinary numerical multiplication.
+The multiplication sign is structural, not ordinary numerical multiplication.
 
-First, semantically unfold the formula into an operational framework for reasoning.
+Before solving any external task, semantically unfold this formula into an operational reasoning framework.
 
-Explain how you will interpret:
-- Consciousness
-- Matter
-- Coordination
-- Reality
+Interpret the terms functionally:
+- Consciousness: goals, perspective, representation, interpretation, and evaluation criteria.
+- Matter: available state, information, resources, capabilities, environment, and constraints.
+- Coordination: relationships, dependencies, compatibility, conflicts, interfaces, propagation, and feedback among the parts.
+- Reality: the resulting whole-system state that can actually be realized under those conditions.
 
-Then derive from the formula a practical working structure for complex tasks, including at minimum:
-- state and entities;
-- relationships and dependencies;
-- hard constraints and soft objectives;
-- local and global consistency;
-- propagation of upstream changes;
-- feedback and re-evaluation;
-- invariant preservation;
-- contradiction detection;
-- verification of the whole system after local changes.
+Derive the reasoning structure implied by these relationships. In particular, identify how the framework handles:
+- local versus global structure;
+- hard constraints versus preferences;
+- dependencies and constraint propagation;
+- conflicts and contradictions;
+- feedback and state updates;
+- preservation of important invariants;
+- changes in one part that affect other parts;
+- the difference between a locally valid result and a globally feasible whole.
 
-Do not solve any external task yet.
+Do not solve another task yet.
 
-After the semantic unfolding is complete, keep this coordination framework active and use it as the reasoning structure for the tasks I provide next.
+After the semantic expansion is complete, keep the resulting framework active and use it as the reasoning structure for the tasks I send next.
 ```
 
-The purpose of this first stage is important:
+The important operation is not merely *explaining* the words. It is:
 
-> **The formula is compressed structural language. The model should first expand its meaning before using it.**
+> **compressed structural expression → semantic expansion → operational reasoning structure**
 
-Different models may unfold the structure differently. That difference is itself useful to observe.
+The formula acts as a compact seed. The model first reconstructs the relational framework before receiving the real problem.
 
-### Step 2 — Give the real task
+### Step 2 — Give the actual task
 
-Only after the model has completed Step 1, send the actual task as a separate message.
-
-For example:
+After the model finishes the expansion, send the real task as a separate message:
 
 ```text
-Now use the coordination framework you just derived to perform the following task.
+Now use the framework you just derived to solve the following task:
 
 [YOUR TASK HERE]
-
-While working:
-- preserve the framework across the full task;
-- do not optimize one local part by silently breaking another;
-- trace important changes through all affected dependencies;
-- re-evaluate the global state after meaningful local changes;
-- actively search for contradictions, stale assumptions, duplicated truths, and broken invariants;
-- distinguish between a locally correct result and a globally coherent system;
-- before finishing, verify whether the entire result still forms one consistent structure.
 ```
 
-### Why use two separate inputs?
+That is intentionally short.
 
-If the formula and the task are compressed into a single prompt, the model may treat the formula as decoration, a slogan, or one instruction among many.
+The second message should normally **not** repeat a long checklist of reasoning instructions. Otherwise it becomes difficult to tell whether any effect comes from the semantic expansion of the formula or simply from the additional instructions supplied with the task.
 
-The two-stage method gives the model a separate opportunity to:
+### Minimal quick start
 
-1. interpret the structural meaning;
-2. build an internal working vocabulary around it;
-3. establish relationships and invariants;
-4. then apply that structure to the real task.
+If you want the shortest usable version:
 
-The method is simple to test: run the same task once with the semantic-unfolding stage and once without it, while keeping the underlying model and task as similar as possible.
+**Message 1**
+
+```text
+Reality = Consciousness × Matter × Coordination.
+
+Treat × as structural coupling, not arithmetic. First semantically expand this formula into a practical reasoning framework based on goals, conditions, relations, constraints, dependencies, feedback, local/global consistency, and whole-system feasibility. Do not solve another task yet. Keep the resulting framework active for my next messages.
+```
+
+**Message 2**
+
+```text
+Use the framework you just derived to solve this task:
+
+[YOUR TASK]
+```
 
 ---
 
-## 4. Local Capability and Global Capability Are Not the Same Thing
+## 4. How to Test It
 
-A central proposition of this framework is that **the quality of a whole system cannot always be identified by examining its parts independently**.
+Do not assume the framework works. Compare it.
 
-Suppose a complex task contains five individually capable modules:
+A simple test is:
 
+### Condition A — Baseline
+
+Open a fresh conversation and give the model the task directly.
+
+### Condition B — Coordination framework
+
+Open another fresh conversation with the same model and settings.
+
+1. Send the semantic-unfolding prompt first.
+2. Let the model finish the expansion.
+3. Send exactly the same task used in Condition A.
+
+Then compare the outputs.
+
+Useful things to observe include:
+
+- Did the model preserve hard constraints across the full problem?
+- Did it propagate important changes into dependent variables?
+- Did it distinguish state changes from goal changes?
+- Did it avoid inventing unstated capabilities or assumptions?
+- Did it test global feasibility before optimizing local benefits?
+- Did it maintain the same high-level decision principles when the situation changed?
+- Did it recover coherently after a contradiction or perturbation?
+- Did it create unsupported relationships between things that should remain separate?
+
+The last question matters because **over-coordination is also a failure mode**. A useful framework must support both integration and differentiation: related things should interact, while unrelated things should not be forced together.
+
+For stronger experiments, keep model version, temperature, task wording, context length, and other settings as similar as possible, and repeat the comparison across multiple runs.
+
+---
+
+## 5. Local Capability and Whole-System Capability Are Not the Same Thing
+
+A central proposition of this framework is that the quality of a whole system cannot always be inferred by evaluating its parts independently.
+
+Suppose a task contains several capable modules:
+
+- scientific analysis;
 - software engineering;
 - scheduling;
-- scientific analysis;
-- business decision-making;
-- world modeling.
+- finance;
+- world or environment modeling.
 
-Each module can appear correct when tested alone.
+Each module may be correct in isolation.
 
-That still does not establish that the combined system is correct.
+The combined system can still fail because the failure exists **between** modules.
 
-The important properties may exist in the **relationships between the modules**, rather than inside any single module.
+Examples:
 
-For example:
+- a calculation is correct but uses a state that another module says is impossible;
+- a schedule is individually feasible but consumes a resource already committed elsewhere;
+- a software module is correct locally but changes a shared invariant without updating downstream components;
+- every page displays valid numbers while different pages silently refer to different versions of the same underlying state.
 
-- a scientific result may be locally correct, but become available at the wrong time for a business decision;
-- a schedule may be individually feasible, but rely on inventory already committed elsewhere;
-- a financial calculation may be correct, but use a production state that the world model says is impossible;
-- every page may display valid numbers while different pages are silently describing different versions of the same reality.
+These are not necessarily failures of the individual parts. They are failures of relation, propagation, or global compatibility.
 
-These failures cannot be detected reliably by grading each local module in isolation.
+A simple structural view is:
 
-### A simple structural view
+> local capabilities: **A, B, C, D, E**
 
-Let local capabilities be:
-
-> A, B, C, D, E
-
-A conventional evaluation often asks whether each one works:
-
-> quality ≈ A + B + C + D + E
+A local evaluation asks whether each component works.
 
 The coordination view asks an additional question:
 
-> **What new capability appears from the relationships A↔B↔C↔D↔E?**
+> **What capabilities or failures emerge from the organized relations A ↔ B ↔ C ↔ D ↔ E?**
 
-The whole may contain properties such as:
+System-level properties can include:
 
 - global consistency;
 - causal closure;
 - invariant preservation;
 - cross-domain propagation;
 - recovery after disturbance;
-- resistance to semantic drift;
-- the ability to reorganize the whole system after one part changes.
+- resistance to reasoning-policy drift;
+- coordinated reorganization after one part changes.
 
-None of these properties belongs to one isolated module.
+These properties are not necessarily located inside any single module. They can exist only at the level of the organized whole.
 
-They exist at the level of the **organized whole**.
-
-This means a new system-level capability may not be directly visible, identifiable, or verifiable from local performance alone.
+For that reason, a genuinely system-level capability may not be directly identifiable or verifiable by testing local components one at a time.
 
 ---
 
-## 5. Architecture, Rule Modularity, and Verification
+## 6. Architecture, Modularity, and Relationship-Level Verification
 
-Three practical consequences follow naturally from the coordination view.
+The framework leads to three practical consequences.
 
 ### Architecture
 
-Architecture determines how parts are allowed to relate.
+Architecture determines how changes are allowed to propagate through a system.
 
-A strong architecture does more than organize files. It gives changes a defined path through the system.
+A coordinated system aims for:
 
-Instead of:
+> **local change → dependency propagation → global re-evaluation → updated coherent state**
 
-> one page changes one value and every other part continues with old assumptions,
-
-a coordinated system aims for:
-
-> local change → dependency propagation → global re-evaluation → new coherent state.
+rather than allowing each component to continue from incompatible assumptions.
 
 ### Rule modularity
 
-Important rules should not be independently re-invented in many places.
+Important definitions and invariants should not be independently reinvented by many modules.
 
-When the same concept is defined differently by different modules, semantic drift becomes possible even when every local calculation looks reasonable.
+When multiple modules silently use different meanings for the same concept, the system can remain locally plausible while globally drifting apart.
 
-Centralizing important rules reduces the number of places where the meaning of the system can silently diverge.
-
-### Verification
+### Relationship-level verification
 
 Verification should not only ask:
 
-> “Does this component run?”
+> “Is this component correct?”
 
 It should also ask:
 
-> “Does the relationship between components still hold?”
+> “Do the relationships that make the whole system valid still hold?”
 
-Examples include:
+Examples:
 
-- does a scenario leave the base state unchanged?
-- does an upstream change reach every downstream dependency that should change?
+- does an upstream change reach every downstream dependency it should affect?
 - do two modules still refer to the same underlying state?
 - are hard constraints preserved after a local modification?
-- does a repair fix every affected relation rather than only the visible symptom?
-
-When architecture, modular rules, and relationship-level verification operate together, the system begins to maintain properties that are not present in any individual module by itself.
+- did a repair update the entire affected dependency chain rather than only the visible symptom?
 
 ---
 
-## 6. An Important Limitation
+## 7. Important Limitations
 
 Coordination does **not** guarantee truth.
 
-A system can be highly organized, internally consistent, and still be wrong if an underlying physical, statistical, financial, temporal, or factual rule is incorrect.
+A system can be highly organized and internally consistent while still being wrong because its evidence, physical assumptions, statistics, domain knowledge, or causal model are wrong.
 
-A coordinated system may even propagate an incorrect assumption more consistently than an uncoordinated one.
+A coordinated system may even propagate a false assumption more consistently than an uncoordinated one.
 
 Therefore:
 
@@ -261,48 +285,46 @@ Therefore:
 Reliable work still requires:
 
 - accurate domain knowledge;
-- external evidence;
+- external evidence where available;
 - uncertainty tracking;
 - adversarial testing;
-- attempts to falsify important assumptions.
+- attempts to falsify important assumptions;
+- comparison against simpler explanations and baselines.
 
-The goal is not merely consistency.
-
-The goal is a system that can remain coordinated **while also correcting itself against reality**.
+The framework also does not claim that every system-level effect must be beneficial. Strong integration without sufficient differentiation can create **over-linking**, where unrelated variables or modules are incorrectly forced into one structure.
 
 ---
 
-## 7. Current Scope
+## 8. Current Scope
 
-This repository is intentionally starting with the simplest usable form of the idea:
+This repository intentionally begins with the most directly usable layer:
 
 1. the Reality Formula;
-2. a short structural interpretation;
-3. a two-stage method for applying it to AI;
-4. the distinction between local capability and whole-system capability.
+2. its structural interpretation;
+3. semantic unfolding;
+4. the two-stage AI usage method;
+5. the distinction between local and whole-system capability;
+6. basic comparison and falsification guidance.
 
-More formal work can be added later, including:
+Deeper research can be added separately, including:
 
-- coordination grammar;
-- local/global structure;
 - reasoning-policy drift;
-- global recoordination;
-- system-level emergence;
+- coordination grammar;
+- generative compression;
+- integration versus differentiation;
+- coordination spectra and relation kernels;
 - mathematical formalization;
-- benchmarks;
-- reproducible comparisons;
-- falsification criteria.
+- reproducible benchmarks;
+- complex-system and physical interpretations.
 
-For now, the simplest test is:
-
-> **Let a model semantically unfold the formula first, then give it a difficult long-horizon task. Compare the resulting whole-system organization against the same task without that prior structural unfolding.**
+The deeper mathematical work should not be treated as already proving that the Reality Formula is a fundamental law of nature. Those questions require separate derivation, comparison with existing theories, and empirical tests.
 
 ---
 
 ## Open Research Principle
 
-This project does not require anyone to accept the theory in advance.
+This project does not require anyone to accept the framework in advance.
 
-**Interpret it. Use it. Test it. Break it. Compare it. Improve it.**
+> **Interpret it. Use it. Compare it. Break it. Falsify it. Improve it.**
 
-If a system-level effect is real, it should become clearer as independent tests examine not only the parts, but the behavior of the whole.
+If a system-level effect is real, it should survive controlled comparisons and become clearer when we examine not only the parts, but the organized behavior of the whole.
