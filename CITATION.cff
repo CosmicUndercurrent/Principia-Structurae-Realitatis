@@ -8,6 +8,7 @@ version: 1.0.0
 date-released: 2026-09-22
 repository-code: "https://github.com/CosmicUndercurrent/Principia-Structurae-Realitatis"
 url: "https://github.com/CosmicUndercurrent/Principia-Structurae-Realitatis"
+license: CC-BY-4.0
 abstract: >-
   Principia Structurae Realitatis is an open research framework built around the structural expression
   Reality = Consciousness × Matter × Coordination. For AI use, the expression is treated as a
