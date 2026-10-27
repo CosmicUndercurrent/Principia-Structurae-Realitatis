@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this public research overview, please cite this repository."
-title: "Principia Structurae Realitatis: A Structural Reasoning Framework for Whole-System Coordination in LLMs"
+title: "Principia Structurae Realitatis"
 type: software
 authors:
   - family-names: "CosmicUndercurrent"
@@ -10,16 +10,16 @@ repository-code: "https://github.com/CosmicUndercurrent/Principia-Structurae-Rea
 url: "https://github.com/CosmicUndercurrent/Principia-Structurae-Realitatis"
 license: CC-BY-4.0
 abstract: >-
-  Principia Structurae Realitatis is an exploratory research project on how
-  component interactions, evolving requirements, and operating conditions
-  relate to the reliability of complex systems and AI-assisted work.
-  This public edition provides general research themes and evaluation
-  considerations without publishing its underlying theoretical formulation.
+  An independent exploratory research project concerning complex systems,
+  artificial intelligence, long-horizon task quality, and system-level
+  behavior. The public edition outlines broad research directions and
+  general evaluation approaches. The project remains in development and
+  makes no claim of a validated physical law or universal performance
+  improvement.
 keywords:
-  - large language models
   - complex systems
-  - system-level evaluation
-  - AI reasoning
-  - reliability
+  - artificial intelligence
   - long-horizon tasks
-  - empirical comparison
+  - system-level evaluation
+  - reliability
+  - empirical methods
