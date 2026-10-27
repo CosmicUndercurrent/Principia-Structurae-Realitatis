@@ -1,7 +1,7 @@
 {
-  "title": "Principia Structurae Realitatis: A Structural Reasoning Framework for Whole-System Coordination in LLMs",
+  "title": "Principia Structurae Realitatis",
   "upload_type": "software",
-  "description": "Principia Structurae Realitatis is an exploratory research project investigating component interactions, evolving requirements, and the reliability of complex systems and AI-assisted work. This public overview discusses research scope and evaluation considerations without publishing the complete underlying theoretical formulation or model-conditioning instructions.",
+  "description": "An independent exploratory research project concerning complex systems, artificial intelligence, long-horizon task quality, and system-level behavior. The public edition outlines broad research directions and general evaluation approaches. The project remains in development and makes no claim of a validated physical law or universal performance improvement.",
   "creators": [
     {
       "name": "CosmicUndercurrent"
@@ -11,13 +11,12 @@
   "access_right": "open",
   "license": "cc-by-4.0",
   "keywords": [
-    "large language models",
     "complex systems",
-    "system-level evaluation",
+    "artificial intelligence",
     "long-horizon tasks",
-    "AI reasoning",
+    "system-level evaluation",
     "reliability",
-    "empirical comparison"
+    "empirical methods"
   ],
   "related_identifiers": [
     {
