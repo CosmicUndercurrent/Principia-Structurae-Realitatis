@@ -1,7 +1,7 @@
 {
   "title": "Principia Structurae Realitatis: A Structural Reasoning Framework for Whole-System Coordination in LLMs",
   "upload_type": "software",
-  "description": "Principia Structurae Realitatis is an open research framework built around the structural expression Reality = Consciousness × Matter × Coordination. For AI use, the expression is treated as a generative reasoning seed rather than ordinary arithmetic. The public framework focuses on whole-system coordination, constraint retention, dependency propagation, contradiction detection, local-versus-global feasibility, reasoning-policy stability, and controlled A/B testing across large language models.",
+  "description": "Principia Structurae Realitatis is an exploratory research project investigating component interactions, evolving requirements, and the reliability of complex systems and AI-assisted work. This public overview discusses research scope and evaluation considerations without publishing the complete underlying theoretical formulation or model-conditioning instructions.",
   "creators": [
     {
       "name": "CosmicUndercurrent"
@@ -12,13 +12,12 @@
   "license": "cc-by-4.0",
   "keywords": [
     "large language models",
-    "LLM reasoning",
-    "coordination",
-    "whole-system reasoning",
-    "prompt engineering",
-    "constraint propagation",
-    "reasoning policy drift",
-    "artificial intelligence"
+    "complex systems",
+    "system-level evaluation",
+    "long-horizon tasks",
+    "AI reasoning",
+    "reliability",
+    "empirical comparison"
   ],
   "related_identifiers": [
     {
