@@ -1,43 +1,25 @@
-# v1.0.0 — Public Foundation Release
+# v1.0.0 — Public Overview (Current Branch)
 
-This is the first public foundation release of **Principia Structurae Realitatis**.
+**Principia Structurae Realitatis** is an exploratory research project investigating structural properties of complex systems and the reliability of AI-assisted work.
 
-## Core structure
+## Public themes
 
-**Reality = Consciousness × Matter × Coordination**
+- Interactions between components of complex systems
+- Differences between isolated checks and complete-system outcomes
+- Reliability under evolving requirements
+- Robustness, error recovery, and continuity over time
+- Independent comparison and empirical evaluation
 
-The multiplication sign is structural, not ordinary arithmetic. The expression is used as a compact generative seed for whole-system reasoning.
+## Scope
 
-## Included in v1.0.0
+The current public branch provides an overview rather than the complete theoretical formulation or model-conditioning materials.
 
-- Structural interpretation of the Reality Formula
-- Functional definitions for Consciousness, Matter, Coordination, and Reality
-- Two-message semantic-unfolding method for LLMs
-- Local versus whole-system reasoning distinction
-- Hard-constraint retention and dependency-propagation framing
-- Contradiction and empty-feasible-set detection
-- Reasoning-policy stability as a test target
-- Under-linking and over-linking as dual failure modes
-- Controlled A/B testing guidance
-- Explicit limitations and falsification guidance
-
-## Intended use
-
-This release is intended as a directly testable public baseline. It does not claim that the Reality Formula is already a validated physical law, nor that the framework always improves model performance.
-
-Users are encouraged to compare the framework against a normal baseline using the same model, task, and settings, and to report both positive and negative results.
-
-## Citation and archival metadata
-
-The repository includes:
-
-- `CITATION.cff` for citation metadata on GitHub
-- `.zenodo.json` for Zenodo archival metadata
+The project does not claim universal improvements or a validated physical law. Claims about effectiveness should be assessed with comparative evidence and realistic end-to-end tests.
 
 ## Repository
 
 https://github.com/CosmicUndercurrent/Principia-Structurae-Realitatis
 
-## Open research principle
+## Research principle
 
-**Interpret it. Use it. Compare it. Break it. Falsify it. Improve it.**
+**Observe. Compare. Verify. Revise.**
